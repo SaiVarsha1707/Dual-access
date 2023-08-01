@@ -1,0 +1,84 @@
+/*
+SQLyog Enterprise - MySQL GUI v6.56
+MySQL - 6.0.11-alpha-community : Database - dual acess storage
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`dual acess storage` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `dual acess storage`;
+
+/*Table structure for table `file` */
+
+DROP TABLE IF EXISTS `file`;
+
+CREATE TABLE `file` (
+  `fid` int(100) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) DEFAULT NULL,
+  `keywords` varchar(100) DEFAULT NULL,
+  `description` varchar(100) DEFAULT NULL,
+  `filename` varchar(100) DEFAULT NULL,
+  `file` longblob,
+  `encryptimg` varchar(100) DEFAULT NULL,
+  `secret` varchar(100) DEFAULT NULL,
+  `oid` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`fid`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+/*Data for the table `file` */
+
+insert  into `file`(`fid`,`title`,`keywords`,`description`,`filename`,`file`,`encryptimg`,`secret`,`oid`) values (1,'java','security','confidentality','New Text Document.txt','êüƒLq-)Q”t+×í®WÞSA#y’ÕÍhÛÏ­ù^qßÉ@iQãXLƒ¸áÁG*5\\-lî¶âcŠJ”øµÉ†Ì^TÚŠÁ¸	…¢àT‡=eð|\Z\\p×º_ã…7ØE£b“ìÐõ*ÊBmÌwføwnò—HmÝnu0-}«#ªÉ\n\Z¬¡ØÚÊ3û\'îS~•éS´2\';´l{Ç(ÙaSØ(ß†ìžFr˜m¤Z]‰%¢£û+þl¤fòDeÖWsò4Ä¢˜6F\0ãÀ”±•©¬NÈ¡mÆe2¯™’&‚0WÏ£>^Ô07ñŽáN#JÂŽ²5”hP_Áã}T™2¿ýÏpŸã\\ËBéwºwÐxß­½3î*2Zñ{›ó¯ÙÔz\r:	¦ìMd«W\'²ÅîH¶B*ûÑ^ÛŽõ°•gãÀÝ»ºxï±‘ÈOøî•oÈ’¨l©©[LŸI FÝ*‡ìhÇçlœ#ê–º,d[B¾àâ<\\à‚ŒM‚Ã½ðúÎŒÜW¼u·Ö7;#Ý³Ë–é%TrtÅ¸eÖËå`píí´×ñ)ÊÌäÎÖu£\'VÝ¤üŠÌ3×¼BÉ®”õ´G˜Ä¨cDgé‰ý±S4¾pýŒ„õ«þ1Èo\\Õ\\qÿ+¤cÏ>ÿ¿¹šŽ¥)´\0ÙCoO©qÀ·‘ÞI;—§ûf¤²WÔx»Ç³âW=<_uÛco¤¶Ÿ¥?ÈŸ~ð‡êÜK²&NÊa¾Q$Ö…TQp‹ÿà²w|O÷MÀ±!´÷÷¨q}CŽçäƒ^P	sJô`²JÏ¾†’<£&Ÿ®Ôx¢0Ý¸qÏ;áTŒÄÕ¿¡½8=|\ZMháO\'¬©\\±Y’%êt<¼“R±¡rP`Øü²[ÞÇÒH¦MüvÝšrÂû.FÚK`iãBYOnò¢ºî—˜©íŽ\Z»Ð{³ÄÐ³Wdß•/rvœÌ%nR/ÚÁÖ§’­ê°Y¢XÇ­™©~¦[sæ”.Í[W-‹„ç‚+0íñ³ßÍ\0”\\6;ë‚udLð)nêèït[áÈP\n`¢IRGh,sfI„Ù«Z;“¬ZÑDÖLº,x]øÿRûq”¿h?ûº»©¨[8_ÐÊ\"·º%ˆ\\/‘ß‰½™y}Ç¡UAŒ\0ÙY{cWy‹å)9¹ËGýh¿[Àÿi‚vùŠ°Å¸FqPAmÝ#„Ô9	Ž@ëô¿ Û\"ôän4YFàK×tP•w<E–ä?%¨ÍégD²¡´BWÖ˜&Áh°_¥e7ôw––)8iÆdm¥[æ¬3UÖ¸Ó1ù\nézAnÖž­:O.aNúEjS2žDQð(Äbßãr‰ËG®‹<þÄUÀEá(W/¨ÏU\rŒ=Ü…3/H´9c˜›WT\"JÌ›WM–n‡ÚµýT)C›ÿjBYÑqí?‹I¶¶ì¸DäÕ9ý‚R t‘XŒf­1û(Ï\n£Kýš;âÑÒò@	ô“™_Ï÷çÈ\")KgÐî£bm‰ç·J4^Î8gÊwYP¥ÉI43Ì•Üm ýÃj‡¾§ÌØgDé+F¤\Zf=¡gm¨ßÎ¸œGO~<|²ƒijmÓ§•Ö˜sAóEë:ö}tøÈ{”/²]y§nê¦§n65	¦I“\r2B¼A/ˆR1/ä¹cÄ7ëd÷‹”ˆžÓëÂ³„vJšƒ! &)ˆá†@€ßõ˜ßXzÙLëeo()É¦ŠSB’Ž€S’2\"7h%?¿¬C¢Ïû9É‘û¢àf¹_O¹¼‚ÒÇl;$D¹‘×V(»í>°Žåd§ÆWd~MÅ6I\'ÏÔƒ­`ÐØ~·oÝ®øØ6U»”í®²#ûJ\0ÛnYøéÊ;(Áô‚!	lÁ‰ÆŽ©£-.‘¡²3Rê/fŸ»€,7é×Jh$:	Ú¶áqDÔRæ¸$_å}:\0UÞŽ;Z¶k4Û1–ŸdÔ¬H«ö{àBèú4ÇÈê.%Ã*Ç/e¤yYCÆì\nÊÁÎ6g\\p˜e”ÝDÛ›ÞÉÐ;o¹@¦MyØy\r‰Œé2‰Ü=iÜŸ#µÄÓ3…ûìO£¼.?Ô°Íj~\rÊk¼éYŒ„©á4X»_Ã&Ò<*oá%VA\ZÕ[{ÚWž`üGöž`cƒ\ZZÁDí×~ÂÏYŸ¾±×Ç¢U	l›\'ÑcN£vÙP•dêÊÐô}ùîå/™J¾¡þzE„³iEÔý_¹Í‰ZßÅ‚WÏÑG=Fæ`Éÿºã˜^.\"$§k×”;d¹zÈM¯Â4å2\n‚ÎÈÕ¼>b7H®ƒÐ‹ûvXL­“\Zº‰Ÿ±>µ<{\rÐ&äÍnS4¸ðÀÑº:\'®TÓï4\0k{.÷yGœ—ŒVs:.èÉÙô;›ªÙj”I[)÷9²ü\'ŠÌû&5Àuw¾Þ‚td\rœW¦Â8ìÃ8¥i¹ª»d¶L¤2®…^µlíEyÂË”íC/ÍýÅ–œÂÓ0ó¬-ãóÛl½n€­Îª9©ã{¥‰QÞ£ª³\nb:¾ ¼\Z[—F}<´3¦²[òó’çá±\rþßÍÕ±$]CF—. †J]ñôõÌ1Ãöo›Ã8¥i¹ª»d¶L¤2®ÆìzÒßÊ[?O+ÄØÕk;@A5Ê¼Õ–@ƒQ;ßg:¾ ¼\Z[—F}<´3¦²[òÂÜ3ûÄuŒ\"[Z½%0\'OíÔ|)},ç)_ÜCëçB€µµðn`Ý<¿NÔÙo—Ü#äA!*\0]M ÿYØñIÅGºD2˜‘P³3\nåð˜Þ`BàaÖy—ð !îå_³@*I~á°ýŒ§kÙ¬†>?Âl€¢I»yÝÛ2‘Ò}ŸëC%3›¤s,)ÕnlxNÑL2`X“I%€CËÃ’_>íÓ€÷°mgB)\"·ÐAíY3%¡Dï§ôªˆƒú±Œz˜Q5?é~Mð2±šØN¢þõ£v¸4º_[L=LT0g:ZA]¾‘ÖÀ~Y†ôÄ( m,¼Bœ«ívÑ°D‹´rÒC­2¨ØÕïIŒ>ÄQíZy$!Y&s1”[Dí	FkÊqîšŠ(Y1Põ_w´äÞæ6ÂÂ€»å\0Ü$ŸŽk¢…÷@D»=è¤(Q0ƒj\0„z—vRþ0\n×>qÎ¢è“zëmSšÔ*™„SÌrÑj€ÒÕœ,e½ñQ&H%™Öç?¶ð³‘L[àýeÿZ6ˆaøUàx;\"û¼j¹\'´lÛ:.ö:aF€hÓÔˆhˆNÐÛ¦âî€Ð‰‹_ àNqèÆ+N$Ž‡ÙY®2¨7Õ.û‡RHFçE)ÌÓ£ºCH*ÛôSí9Åß‹‹\"õú§–3LÎ¢3(\\ÄªØ˜InµÑ7r®ÚÏ\0×NõFF@q\r¼¸–s®#3†tõ;ÕÏ³Ð¶‚;ˆûòC$\\2HÄÏýYàoh¿áûä˜‘ß²r&\nÛÐÈ«<ÞmBýjGSHÉkeF¾½ªV3nÇq`ö&×ÑëcpÓ\'¤É¼ï\0Âé-³ÕÒ=.Éâm¼iÖæ?{HÿyàoXôÝ¾‚Ï>Îã£\0Úqó²\\–À+‘Ÿà´Škð	Åã2©\'ÏF#Uð¡MÈ(ýk48sn~mIöÀÖàp\nÞ¡5JÜD cR£”Ä&Õ\n\nÿÐôÙ8â:ý¹›¸£E;kZF»€š¯¬ÚH›|¶Ü&à,jž=ð›#¢²¦@§åçÀr2Pñ;õž¦š‘²öÑ’FL=Ênä©ÄUfÅÍÃXìÁpžXñÇAQ¶~Ï³K’à¢:ùöØÅicl§“÷3Ä¤>>¡„‰“j›]{†¬sR²xŸté‡»ïiÛÒ†jþ\0Ö”òà¥GšÀ¤-…Þ²GTAc{¬D\Zhg§0ž+§64\0Nñ#nœ9v°Éq;Ùwo)*?Ž‘9²w2-ùÃÍ×¨“ôº4Mõ	\"\r°r‚óç\'5ÎjU¶ï•}_˜[Ùf ’Æ)êìqº¨Pð',NULL,'65','19');
+
+/*Table structure for table `reg` */
+
+DROP TABLE IF EXISTS `reg`;
+
+CREATE TABLE `reg` (
+  `uname` varchar(100) DEFAULT NULL,
+  `pwd` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `role` varchar(100) DEFAULT NULL,
+  `gender` varchar(100) DEFAULT NULL,
+  `state` varchar(100) DEFAULT NULL,
+  `country` varchar(100) DEFAULT NULL,
+  `image` longblob,
+  `status` varchar(100) DEFAULT 'request',
+  `id` int(20) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+/*Data for the table `reg` */
+
+insert  into `reg`(`uname`,`pwd`,`email`,`role`,`gender`,`state`,`country`,`image`,`status`,`id`) values ('ramya','ramya','ramya@gmail.com','owner','female','tirupathi','AP','ÿØÿà\0JFIF\0\0\0\0\0\0ÿÛ\0C\0		\Z\Z&\"\"&0-0>>TÿÂ\0hh\0ÿÄ\0\0\0\0\0\0\0\0\0\0\0\0\0	\nÿÚ\0\0\0\0\0µ0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ê\Z¾‡½q÷ÚÏûì\0\0\0\0 ¥*úÀò-òÉ\0\0\0\0ÇŸÏåÍÐ\0\0\0uz±´¿û\0\0\0ÒYÄ\0/ÖY€\0\0\0ƒ4z\0[Õ—\0\0\0\0‚´‚\0[¥š\0\0\0\0èŒç\0Í0€\0\0\0~s‰Ò€k¦o4\0\0\0!P¯\0.ŽÁ@\0\0\0\nã§¿l@\0\0\0ª¾\"z>TÚ­\0\0\0\0ÇÍ}ì\0\0\0\0J·ãåïRHöòÑ_mØ|Ð\0\0\0þ2{lüS•s’Fã³Ý|5¿	Ëw>P\0\0ÁÐ¾ý×:?UuYxÂÕ¦ly¦ °[£\0\0:Çâ\n§ž}Ê¢»Ô=Ü/©ÉÔ^i~\Z!à\0gò-€èû8dé=ñœOp \0gê.€\rgš—_T¶	c~à\0gê.€\rgµß¬÷Ô°	E ^@\0qŸ¨º\04yœ2ùjzê3¦	E ^@\0qŸ¨º\04yœ3I9¸ÑŽw½hJ-ò\0ŒþE°£Ìá»ðó÷w•Qh\0šøÜt/»jùhÂî)š8¢Ð/ \0ò•€+éªý%UñÒÌ¢Ð/ \0¶Š@JëzýKó@J-ò\0hD\0µîœ€€\\_ \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ÿÄ\0;\0\0\0\0\0\0\0\0V	 08@Ps!v#27A$%15Ut€uÿÚ\0\0\0ÿ\0Õ¹w`1~bE­RÀWŠ¥Ú6ŠÉ]\"YRÄº¨R˜1«³ëÍ{6`Ê× T³×[ŠJL(q\\É¹ž\0Zý¾z(`\"ž;éÍ5EH•˜Œ-Œ€C¬0®ÑâŒâBµ…3	 \'ZßEÚíÂkˆJæ¡M:íª%Ô»™©¹‹£©Ywî_¿v§há×…£·qîÐvÑu[¸n©EmFÝÛcAÉ\0%Ô0#7ô=¶ØÁ8÷®-R~f›Ã•ë×’O<xág.\\¬uW_ÈÒ\rŒs–ª‹Ô¬qg¯7!¿ô-›Ë*æLÅ?<šý¬cuE„?•‰24¦&ÈÕû|¬cÆ<)ÖF*Z6v%Œ¬k’9býªNZ¸úÌÜ–¡`käÚr®X“4n/E®ªÜuæÔUUëïD*§Ð:E$WÀŒ[£úý©‹u¼ÎŒÙ…—«äq™ÉÇ»\'ÐzFY.óÆ,u‘¹’ÊùqK%‘%²tþ-±GèYPVé¯WØ¶áüd¢ÿ\0—™¡ujšñ\Zí`8+a”{($úŠS”J`À !°¸¥Æ\ZËV\n¿d¡qs\'Qeòeê¥âåÞ‘ž¿W€Š„ŽHReÅ»6‰}suäù¢ˆIx6àkEtŠ*Ì†)ˆcÅ˜¢ !ähvº¯D€>E²5æ§Z\"Ðúßé˜Ü×yÇLˆYÃˆ«1í£¦—hí[¸n©ÒY§é3ç™^2Œp·h€•hÚ÷Ñs†«bÜæUžÉ³4d÷©Ô”ÖOÑáCYÂðÌ’¶E§ë˜®\'+¶\nÃó°œ‰ðŸÌÛˆÈ©I·©1Œdåó¥‡©6øçIsíýDUqùmÄ}gX?M±fU¼ºÄ5ŽÄP’Oé ‹”L’É•DÎF!ñ®:QnØõ+××Ú5dÑ‚A²	 ‘•?£f­ÎÄ˜}WQH,k$ûq9\r{ß¬ïjYBB9aWf\"p“Îù ’ìeT¿Ù\\9bìŽ›Ž\"ÈÔÝœÃ†tå¡Œ‹E£gâöÞðNE}[w/&³:ÜD=üÉbÿ\0—Æ+¬d\\»z‰©@È¿/•þ*Ï]cý]ÂÀ¢Ê,Hzë!ÂÍ±yšÇn˜²ç;´›‘T[Ñ÷»`ê\n$GÒììm@ !†÷³d•Ñ‹T%ÕýO™™°@×ÔÌ£Ô &U»ÕÅüíZã½\\_ÎÕ®;ÕÅüíZâ\ZçP²¸Q´-‚&IdÓõÔOÐåËfM–pådÐAÌ¢ªííKÜÕ}PÇŠNåý:¿žžà\\ŒŒŠÂª°~£Y¶»…«ûŠHœk†jÉ$€HÖå$£$!äÝÆ?j«g¬Ü¨ÝË}7×baZ/µ¦Ú-séWÃ¹»9šñìH7F\Z¥yc‘§ƒX7*Éˆ5­ÛVs1Q?¨š|BÍÃØaÙÊÄ=EëÈvî~_¤‰Û£æŠã1]Ql…Eº‰#UÔƒº×clTÿ\0ÅÆI 4_Üƒhyr\r¡äN5ñôœ}ÇjáV«þn‹j¡½ç°rn]-‰ê‡SðÈÈéFnÑ Fê¡ýü\Z±`—Y^\0\0‰Ô­¯?¬t	ìï–àñ“p2¬7ÃbB™\\>5®º\'¶fÛ›+áÑ½‘u@´¶Ç¶7Â5¹·>£üï9â,a$Œm²Ûõd»Rµ÷ÁÖÎaÇ¾¶sû=ðu³ŸØq¼y‘“rÔ<½Fa	VÕš¶Q}zÙ¬MÂtˆ9»³r,bH›–Þø:ÙÏì8Ooµ·ý GñŠæb ó=*eû¢!ÆßíËÛýl/è‡ø:ÙÏì8÷ÁÖÎaÅogð®m”,Eê-gÏU›#¼úÅTcRu“j­¢Ý0]m3ô²|ö1ëg¬œ¬ÙÓUˆ²Õ½¼J¼!\'–\"²åŒjKd÷V§y\ZÖ{[Ã¼$ËÄ¤—ñj~^W0áhyWË\n³‚1r§ù-Ó1³wß½æÆ!€ÅëÙ±)ðG(€qàø0Ý];®X¤×Õ@Ë¡#``‹”øÜ*ºUM¼¶E3•R‘ øº6.J°¿ÛªŠ	Xtß“ä÷Kânû÷Øy»/úàûmïƒ@ë^ÝØ˜çâpÀDHÈ[Ù´¾ÄTÄ€.$a$¤€ý%U“²È´ÛA)8YxôyÑÛlí$A!	TÏò{¥ñ7}ûì<Ý—ýpGý¶÷ÁÑŸY%þÐ²Ý„sUòOnÃ¤*ŒÈ\\¨“vHAº\'HíX²8†tˆ\n‹ÃØC©âÒß‰ºßò{¥ñ7}ûì<Ý—ýpGý¶÷Á õ¢WµÎ-÷Y½yéY†]É•Ù«%ÝªÄp¬eÈWb¦ÒWÐºk…õ³u@Hc$š¾--ø›¡}÷ÿ\0\'º_wß¾ÃÍÙ×\0äÛo|´†µâ<\\¶\0R¥H*îÒ1Œs	ŒaDDuîf?\"ë…$î\n+ ê²œc²ÍD½€˜‰|NÍÔ{µš¸\'‡K~&è_}ÿ\0Éî˜	vnû÷£üÝ—¬‘„yqç§UÒºå\nmudÌ¢“ì8\rÙ³_\\-`G‹‰Qi‡££¶Òylú!eÀêAØ\"Š[kY%Sbïì“õ„Že} áÒß‰ºßòy[ð†Sœ	ËmIò]‰R#¤Ú¹Èœ“jç\"p:M«œ‰Àé6®r\'¤Ú¹Èœ“jç\"p:M«œ‰Àé6®r\'¤Ú¹Èœ“jç\"p:M«œ‰ÅP5Âµ4Æb2Ž‰1\\« ~\\ÜÊ±JdÄik\":xF	Èìñ&Z«Üž°3ö±n”^éX×iq\n-’‘#Ø‰BìL¥‹]ò•w-§Œ£™·+àGa\Z~³ã·dYòŠ:\0òÃ1µYz5e÷ö6¢”b\rQ`Ño–üMÐ¾ûÿ\0“ßix\nw‘R9,ë\0ûÔÉüëdã½LŸÎ¶N;ÔÉüëdã½LŸÎ¶N;ÔÉüëdã½LŸÎ¶N;ÔÉüëdã½LŸÎ¶N;ÔÉüëdã½LŸÎ¶N;ÔÉüëdã£’Óg²Ìd?mMÉÉv\r\"».:H?­õßÙL¼\Z¹³S˜Ê-\nÏªrk€ÊGÅØiÓðlîL_G¯\Z1Ê¬„¶Ýí£ìÇ\"½J¨º­©Œ×\\þ--ø›¡}÷ÿ\0\'Òðô¯ÿ\0~?ÌèÉÿ\0xÉõ\"8é þ·×e2ð·¹Ü×\\ÖÛØe‘„t]Ä_K~&è_}ÿ\0Éïern^eB-’ÎÍ Íë’y}ð’íÉf•f²l„cvîzF´s!ÒAbÍ©ì’X<Íƒ—•Ù\Z›¶lÖY¼h?]êßú{ÿÄ\0C\0\0\0\0\0\0!1Q 0@AP„Ò\"2Ra‚‘²ÓÔBqs’“#C€³´$bc¢ÂÑÿÚ\0\0?\0þ«m€šöáI ‹8\n¤©ñÜ„§E¿½÷Ì8 v\nŸ(LÐ‚|Ø±`_žPž9·ª0Tñ‹; Š6$öà[£Õþh®uI‹YY”\0O‰ÔÄ	!ÉAÆ¦a±çéT«™ZYemììI<hœ¤‘È‡º2æ!Áä ½\'R[ÜîŸÌ¿Ô…ˆpÂÝ0mDEñ‘R¹’Idâgvlå™‰ÎIäf8žþÇR,Ìv™c$,¤õ@²¶$#Í$ËÉnþ$ÐëóÐ‘IäËÊ}#¨Q°ºK~âÑ$_Jqrº&„BE*\'PïE‚yþ(ùOMÜOþÇPîCm<_òž›d•Ï÷º‡&\'\'H·eWÒâ\"¼£ŒÅ‘lž¦Hõ	Ö4ÙÏ	cpKBC1òùàòXK“l“0v$Ú‰-‚t $í ¢	ãÞÛrÚÿ\0ê*:ˆ#‘.ÒÁó66Ý$ÿ\0RFý÷0n¹ó×d•*xÝGVÌC3x÷	™ç}¢[Ô;#õ5ˆ	;˜P\\.ÉVN \\„0Çhç3º,uyo%¼«ø¤€¼M4Žw* $ÖY&ÙÆ [k›Þ Uì`$pÖ¶úÄgsÏÕ.¡ƒ\rÄ\Z96Ü·¿D~zžÁÆ%BAK›k@â¬mÒiŠ>k€çÞ*ç)Oq\ZH‡þ¬ÈFõ#1YÁ3&¢§Vn\r—ÿ\0UhçÄ?˜žKŠûLŸý£q&h\\³É¯ÉAR¹–æúæV-ëšy[ð“²Å¬¦Ä‰7\"\0\0¬§j…¿z\nBþ—&¯¦YJw%ØüÀœêîá Bä4„kJÛwëJÛwëJÛwêÒò‡DÏ›XØ<20DDA™˜ê\0\rdšˆ˜®oÀèˆíŠúŸˆ„ë‡îN£¦H	$RaxÉ•ä\\/z¥R²E,LQÑ”ë¤f\"ˆñìíöÇh>)w½#ø—×;$»?\\F&KŒ– `ßøª’Fã8`G8,p#Ëw8w{¤¬#Æ‡§“+\nÒÙ7ê+Kdß¨¨Ÿ11Ü\\¬&qÐèåO†b]È–a·\0CKL„,Ÿ®K#ñÅAq}ÞíÏûÈSI¶ÎÂOåþlÿ\0\Z]bÂú_†)Ï4bòJ¡™\"T‚k€¹ùuÀ\\üºà.~]D®Ì—3¹B‡bŒoˆê%R¸Ÿ—\\\rÇË¦pCx’;Ÿ@Q\\ÏË®çå×sòéÄ°p²6ÄV•Pcc©E[\'\rÄ3¸ˆN‘¦¡*¹ø¹ŽH¤ŒâWF\\ÅYHÎ¤A\Z½ÐˆpÌª5\0_9ŸV)á”Æà©TÌª5Çm²\\[šRNÓ,l®ÜÏ°CÊ\r Ž(é·31õ \'À~ù¿….%?¸íÇÿ\0šÂP™zR~gØaå}ž\'˜ÿ\0\"±ùc5¼8pï´ìšÿ\0}„åÏù¼	3ì0ò¾ÏõÍ:|ÐóåH¥–?{Oy–÷¸{¢qûÜÏ°ÃÊû<CÐDŸcãÐØñä¹Â[Ò!CXa“ÊÞÔ\"ãö¹Ÿa‡•öx‹÷æ±³á&ýN¦‰ÎI4úÌ†Ñ\r”ø¿¯6H£QnÃ73ìò¾Ï…FsÀÉ2‰O©+ÏáçS*~È™Ê$ãß#=ùJ5»sKÆì3s4¹¹´wTÙÂ}šHñ‘°­-”þ¢´¶SúŠÒÙOê+Ke?¨­-”þ¢´¶SúŠÒÙOê+Ke?¨­-”þ¢´¶SúŠÒÙOê*këÛ”G]„Ç<ÎYˆX,oŽW‹Â™±˜§‰ vŒ1\0º,•lI0\\ dIBœÞ:QãoJšˆ\rÔ\r²ê7?ÉÌ	f>Nb\rLüL`Rv¶¤†Njt)%Ò[’xwSçãv¹¬ïæ8úR´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~®îåŸw›f3]¶ëˆsìû]¾é@ýÁD¨D´“’ž³Oá‚àì+®µ£åyb:¥—t\nuÅ¶Ü~Ã73ý|§·=vÛ®*^J¶’¾pq<°1Î ç#ì3s8P»,LÃ¡3çnQÐˆæ–#1‘Pô”¡µÝ\\Hõ?*¨JA´–0d=\0³Ôÿ\0ÿÙ','Accepted',1),('ram','ram','ramk@gmail.com','user','female','tirupathi','AP','ÿØÿà\0JFIF\0\0\0\0\0\0ÿÛ\0C\0		\Z\Z&\"\"&0-0>>TÿÂ\0hh\0ÿÄ\0\0\0\0\0\0\0\0\0\0\0\0\0	\nÿÚ\0\0\0\0\0µ0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ê\Z¾‡½q÷ÚÏûì\0\0\0\0 ¥*úÀò-òÉ\0\0\0\0ÇŸÏåÍÐ\0\0\0uz±´¿û\0\0\0ÒYÄ\0/ÖY€\0\0\0ƒ4z\0[Õ—\0\0\0\0‚´‚\0[¥š\0\0\0\0èŒç\0Í0€\0\0\0~s‰Ò€k¦o4\0\0\0!P¯\0.ŽÁ@\0\0\0\nã§¿l@\0\0\0ª¾\"z>TÚ­\0\0\0\0ÇÍ}ì\0\0\0\0J·ãåïRHöòÑ_mØ|Ð\0\0\0þ2{lüS•s’Fã³Ý|5¿	Ëw>P\0\0ÁÐ¾ý×:?UuYxÂÕ¦ly¦ °[£\0\0:Çâ\n§ž}Ê¢»Ô=Ü/©ÉÔ^i~\Z!à\0gò-€èû8dé=ñœOp \0gê.€\rgš—_T¶	c~à\0gê.€\rgµß¬÷Ô°	E ^@\0qŸ¨º\04yœ2ùjzê3¦	E ^@\0qŸ¨º\04yœ3I9¸ÑŽw½hJ-ò\0ŒþE°£Ìá»ðó÷w•Qh\0šøÜt/»jùhÂî)š8¢Ð/ \0ò•€+éªý%UñÒÌ¢Ð/ \0¶Š@JëzýKó@J-ò\0hD\0µîœ€€\\_ \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ÿÄ\0;\0\0\0\0\0\0\0\0V	 08@Ps!v#27A$%15Ut€uÿÚ\0\0\0ÿ\0Õ¹w`1~bE­RÀWŠ¥Ú6ŠÉ]\"YRÄº¨R˜1«³ëÍ{6`Ê× T³×[ŠJL(q\\É¹ž\0Zý¾z(`\"ž;éÍ5EH•˜Œ-Œ€C¬0®ÑâŒâBµ…3	 \'ZßEÚíÂkˆJæ¡M:íª%Ô»™©¹‹£©Ywî_¿v§há×…£·qîÐvÑu[¸n©EmFÝÛcAÉ\0%Ô0#7ô=¶ØÁ8÷®-R~f›Ã•ë×’O<xág.\\¬uW_ÈÒ\rŒs–ª‹Ô¬qg¯7!¿ô-›Ë*æLÅ?<šý¬cuE„?•‰24¦&ÈÕû|¬cÆ<)ÖF*Z6v%Œ¬k’9býªNZ¸úÌÜ–¡`käÚr®X“4n/E®ªÜuæÔUUëïD*§Ð:E$WÀŒ[£úý©‹u¼ÎŒÙ…—«äq™ÉÇ»\'ÐzFY.óÆ,u‘¹’ÊùqK%‘%²tþ-±GèYPVé¯WØ¶áüd¢ÿ\0—™¡ujšñ\Zí`8+a”{($úŠS”J`À !°¸¥Æ\ZËV\n¿d¡qs\'Qeòeê¥âåÞ‘ž¿W€Š„ŽHReÅ»6‰}suäù¢ˆIx6àkEtŠ*Ì†)ˆcÅ˜¢ !ähvº¯D€>E²5æ§Z\"Ðúßé˜Ü×yÇLˆYÃˆ«1í£¦—hí[¸n©ÒY§é3ç™^2Œp·h€•hÚ÷Ñs†«bÜæUžÉ³4d÷©Ô”ÖOÑáCYÂðÌ’¶E§ë˜®\'+¶\nÃó°œ‰ðŸÌÛˆÈ©I·©1Œdåó¥‡©6øçIsíýDUqùmÄ}gX?M±fU¼ºÄ5ŽÄP’Oé ‹”L’É•DÎF!ñ®:QnØõ+××Ú5dÑ‚A²	 ‘•?£f­ÎÄ˜}WQH,k$ûq9\r{ß¬ïjYBB9aWf\"p“Îù ’ìeT¿Ù\\9bìŽ›Ž\"ÈÔÝœÃ†tå¡Œ‹E£gâöÞðNE}[w/&³:ÜD=üÉbÿ\0—Æ+¬d\\»z‰©@È¿/•þ*Ï]cý]ÂÀ¢Ê,Hzë!ÂÍ±yšÇn˜²ç;´›‘T[Ñ÷»`ê\n$GÒììm@ !†÷³d•Ñ‹T%ÕýO™™°@×ÔÌ£Ô &U»ÕÅüíZã½\\_ÎÕ®;ÕÅüíZâ\ZçP²¸Q´-‚&IdÓõÔOÐåËfM–pådÐAÌ¢ªííKÜÕ}PÇŠNåý:¿žžà\\ŒŒŠÂª°~£Y¶»…«ûŠHœk†jÉ$€HÖå$£$!äÝÆ?j«g¬Ü¨ÝË}7×baZ/µ¦Ú-séWÃ¹»9šñìH7F\Z¥yc‘§ƒX7*Éˆ5­ÛVs1Q?¨š|BÍÃØaÙÊÄ=EëÈvî~_¤‰Û£æŠã1]Ql…Eº‰#UÔƒº×clTÿ\0ÅÆI 4_Üƒhyr\r¡äN5ñôœ}ÇjáV«þn‹j¡½ç°rn]-‰ê‡SðÈÈéFnÑ Fê¡ýü\Z±`—Y^\0\0‰Ô­¯?¬t	ìï–àñ“p2¬7ÃbB™\\>5®º\'¶fÛ›+áÑ½‘u@´¶Ç¶7Â5¹·>£üï9â,a$Œm²Ûõd»Rµ÷ÁÖÎaÇ¾¶sû=ðu³ŸØq¼y‘“rÔ<½Fa	VÕš¶Q}zÙ¬MÂtˆ9»³r,bH›–Þø:ÙÏì8Ooµ·ý GñŠæb ó=*eû¢!ÆßíËÛýl/è‡ø:ÙÏì8÷ÁÖÎaÅogð®m”,Eê-gÏU›#¼úÅTcRu“j­¢Ý0]m3ô²|ö1ëg¬œ¬ÙÓUˆ²Õ½¼J¼!\'–\"²åŒjKd÷V§y\ZÖ{[Ã¼$ËÄ¤—ñj~^W0áhyWË\n³‚1r§ù-Ó1³wß½æÆ!€ÅëÙ±)ðG(€qàø0Ý];®X¤×Õ@Ë¡#``‹”øÜ*ºUM¼¶E3•R‘ øº6.J°¿ÛªŠ	Xtß“ä÷Kânû÷Øy»/úàûmïƒ@ë^ÝØ˜çâpÀDHÈ[Ù´¾ÄTÄ€.$a$¤€ý%U“²È´ÛA)8YxôyÑÛlí$A!	TÏò{¥ñ7}ûì<Ý—ýpGý¶÷ÁÑŸY%þÐ²Ý„sUòOnÃ¤*ŒÈ\\¨“vHAº\'HíX²8†tˆ\n‹ÃØC©âÒß‰ºßò{¥ñ7}ûì<Ý—ýpGý¶÷Á õ¢WµÎ-÷Y½yéY†]É•Ù«%ÝªÄp¬eÈWb¦ÒWÐºk…õ³u@Hc$š¾--ø›¡}÷ÿ\0\'º_wß¾ÃÍÙ×\0äÛo|´†µâ<\\¶\0R¥H*îÒ1Œs	ŒaDDuîf?\"ë…$î\n+ ê²œc²ÍD½€˜‰|NÍÔ{µš¸\'‡K~&è_}ÿ\0Éî˜	vnû÷£üÝ—¬‘„yqç§UÒºå\nmudÌ¢“ì8\rÙ³_\\-`G‹‰Qi‡££¶Òylú!eÀêAØ\"Š[kY%Sbïì“õ„Že} áÒß‰ºßòy[ð†Sœ	ËmIò]‰R#¤Ú¹Èœ“jç\"p:M«œ‰Àé6®r\'¤Ú¹Èœ“jç\"p:M«œ‰Àé6®r\'¤Ú¹Èœ“jç\"p:M«œ‰ÅP5Âµ4Æb2Ž‰1\\« ~\\ÜÊ±JdÄik\":xF	Èìñ&Z«Üž°3ö±n”^éX×iq\n-’‘#Ø‰BìL¥‹]ò•w-§Œ£™·+àGa\Z~³ã·dYòŠ:\0òÃ1µYz5e÷ö6¢”b\rQ`Ño–üMÐ¾ûÿ\0“ßix\nw‘R9,ë\0ûÔÉüëdã½LŸÎ¶N;ÔÉüëdã½LŸÎ¶N;ÔÉüëdã½LŸÎ¶N;ÔÉüëdã½LŸÎ¶N;ÔÉüëdã½LŸÎ¶N;ÔÉüëdã£’Óg²Ìd?mMÉÉv\r\"».:H?­õßÙL¼\Z¹³S˜Ê-\nÏªrk€ÊGÅØiÓðlîL_G¯\Z1Ê¬„¶Ýí£ìÇ\"½J¨º­©Œ×\\þ--ø›¡}÷ÿ\0\'Òðô¯ÿ\0~?ÌèÉÿ\0xÉõ\"8é þ·×e2ð·¹Ü×\\ÖÛØe‘„t]Ä_K~&è_}ÿ\0Éïern^eB-’ÎÍ Íë’y}ð’íÉf•f²l„cvîzF´s!ÒAbÍ©ì’X<Íƒ—•Ù\Z›¶lÖY¼h?]êßú{ÿÄ\0C\0\0\0\0\0\0!1Q 0@AP„Ò\"2Ra‚‘²ÓÔBqs’“#C€³´$bc¢ÂÑÿÚ\0\0?\0þ«m€šöáI ‹8\n¤©ñÜ„§E¿½÷Ì8 v\nŸ(LÐ‚|Ø±`_žPž9·ª0Tñ‹; Š6$öà[£Õþh®uI‹YY”\0O‰ÔÄ	!ÉAÆ¦a±çéT«™ZYemììI<hœ¤‘È‡º2æ!Áä ½\'R[ÜîŸÌ¿Ô…ˆpÂÝ0mDEñ‘R¹’Idâgvlå™‰ÎIäf8žþÇR,Ìv™c$,¤õ@²¶$#Í$ËÉnþ$ÐëóÐ‘IäËÊ}#¨Q°ºK~âÑ$_Jqrº&„BE*\'PïE‚yþ(ùOMÜOþÇPîCm<_òž›d•Ï÷º‡&\'\'H·eWÒâ\"¼£ŒÅ‘lž¦Hõ	Ö4ÙÏ	cpKBC1òùàòXK“l“0v$Ú‰-‚t $í ¢	ãÞÛrÚÿ\0ê*:ˆ#‘.ÒÁó66Ý$ÿ\0RFý÷0n¹ó×d•*xÝGVÌC3x÷	™ç}¢[Ô;#õ5ˆ	;˜P\\.ÉVN \\„0Çhç3º,uyo%¼«ø¤€¼M4Žw* $ÖY&ÙÆ [k›Þ Uì`$pÖ¶úÄgsÏÕ.¡ƒ\rÄ\Z96Ü·¿D~zžÁÆ%BAK›k@â¬mÒiŠ>k€çÞ*ç)Oq\ZH‡þ¬ÈFõ#1YÁ3&¢§Vn\r—ÿ\0UhçÄ?˜žKŠûLŸý£q&h\\³É¯ÉAR¹–æúæV-ëšy[ð“²Å¬¦Ä‰7\"\0\0¬§j…¿z\nBþ—&¯¦YJw%ØüÀœêîá Bä4„kJÛwëJÛwëJÛwêÒò‡DÏ›XØ<20DDA™˜ê\0\rdšˆ˜®oÀèˆíŠúŸˆ„ë‡îN£¦H	$RaxÉ•ä\\/z¥R²E,LQÑ”ë¤f\"ˆñìíöÇh>)w½#ø—×;$»?\\F&KŒ– `ßøª’Fã8`G8,p#Ëw8w{¤¬#Æ‡§“+\nÒÙ7ê+Kdß¨¨Ÿ11Ü\\¬&qÐèåO†b]È–a·\0CKL„,Ÿ®K#ñÅAq}ÞíÏûÈSI¶ÎÂOåþlÿ\0\Z]bÂú_†)Ï4bòJ¡™\"T‚k€¹ùuÀ\\üºà.~]D®Ì—3¹B‡bŒoˆê%R¸Ÿ—\\\rÇË¦pCx’;Ÿ@Q\\ÏË®çå×sòéÄ°p²6ÄV•Pcc©E[\'\rÄ3¸ˆN‘¦¡*¹ø¹ŽH¤ŒâWF\\ÅYHÎ¤A\Z½ÐˆpÌª5\0_9ŸV)á”Æà©TÌª5Çm²\\[šRNÓ,l®ÜÏ°CÊ\r Ž(é·31õ \'À~ù¿….%?¸íÇÿ\0šÂP™zR~gØaå}ž\'˜ÿ\0\"±ùc5¼8pï´ìšÿ\0}„åÏù¼	3ì0ò¾ÏõÍ:|ÐóåH¥–?{Oy–÷¸{¢qûÜÏ°ÃÊû<CÐDŸcãÐØñä¹Â[Ò!CXa“ÊÞÔ\"ãö¹Ÿa‡•öx‹÷æ±³á&ýN¦‰ÎI4úÌ†Ñ\r”ø¿¯6H£QnÃ73ìò¾Ï…FsÀÉ2‰O©+ÏáçS*~È™Ê$ãß#=ùJ5»sKÆì3s4¹¹´wTÙÂ}šHñ‘°­-”þ¢´¶SúŠÒÙOê+Ke?¨­-”þ¢´¶SúŠÒÙOê+Ke?¨­-”þ¢´¶SúŠÒÙOê*këÛ”G]„Ç<ÎYˆX,oŽW‹Â™±˜§‰ vŒ1\0º,•lI0\\ dIBœÞ:QãoJšˆ\rÔ\r²ê7?ÉÌ	f>Nb\rLüL`Rv¶¤†Njt)%Ò[’xwSçãv¹¬ïæ8úR´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~´¥Ï~®îåŸw›f3]¶ëˆsìû]¾é@ýÁD¨D´“’ž³Oá‚àì+®µ£åyb:¥—t\nuÅ¶Ü~Ã73ý|§·=vÛ®*^J¶’¾pq<°1Î ç#ì3s8P»,LÃ¡3çnQÐˆæ–#1‘Pô”¡µÝ\\Hõ?*¨JA´–0d=\0³Ôÿ\0ÿÙ','Accepted',2);
+
+/*Table structure for table `req` */
+
+DROP TABLE IF EXISTS `req`;
+
+CREATE TABLE `req` (
+  `fid` int(100) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) DEFAULT NULL,
+  `keywords` varchar(100) DEFAULT NULL,
+  `description` varchar(100) DEFAULT NULL,
+  `imgname` varchar(100) DEFAULT NULL,
+  `usermail` varchar(100) DEFAULT NULL,
+  `status` varchar(100) DEFAULT '0',
+  `Trapdoor` varchar(100) DEFAULT NULL,
+  `oid` varchar(100) DEFAULT NULL,
+  `filid` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`fid`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+/*Data for the table `req` */
+
+insert  into `req`(`fid`,`title`,`keywords`,`description`,`imgname`,`usermail`,`status`,`Trapdoor`,`oid`,`filid`) values (1,'java','security','confidentality','New Text Document.txt','ramk@gmail.com','Accepted','65','19','1');
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
